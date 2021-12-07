@@ -35,6 +35,7 @@ import IconsPage from '@/pages/Icons/Icons';
 import NotificationsPage from '@/pages/Notifications/Notifications';
 import PersonalPage from '@/pages/Soporte/Personal/Personal';
 import GenerarOrdenPage from '@/pages/CompraMateriales/GenerarOrden';
+import Formulario_Solicitud_Material from '@/pages/Formulario1/Formulario_Solicitud_Material';
 
 Vue.use(Router);
 
@@ -62,6 +63,11 @@ export default new Router({
           component: GenerarOrdenPage,
         },
         
+        {
+          path: 'solicitudMaterial',
+          name: 'SolicitudMaterial',
+          component: Formulario_Solicitud_Material,
+        },
         
         
         {

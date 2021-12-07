@@ -28,11 +28,12 @@
             iconName="flaticon-settings"
             index="soporte"
             :childrenLinks="[
-              { header: 'Orden de compra', link: '/app/partes' },
-              { header: 'Solicitar presupuesto' },
+              { header: 'Orden de compra', link: '/app/generarOrden' },
+              { header: 'Solicitar Materiales',link:'/app/solicitudMaterial' },
               { header: 'Confirma compra' },
             ]"
         />
+
         <!-- <NavLink
             :activeItem="activeItem"
             header="Entrega Materiales"
