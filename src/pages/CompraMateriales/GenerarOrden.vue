@@ -429,7 +429,7 @@ Vue.use(BootstrapVue)
 Vue.use(BootstrapVueIcons)
 
 export default {
-  name: 'Partes',
+  name: 'GenerarOrden',
   components: {
     Widget,
     Sparklines,
@@ -1192,4 +1192,4 @@ export default {
 };
 </script>
 
-<style src="./Partes.scss" lang="scss" scoped />
+<style src="./GenerarOrden.scss" lang="scss" scoped />

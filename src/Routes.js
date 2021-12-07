@@ -5,22 +5,15 @@ import Layout from '@/components/Layout/Layout';
 import Login from '@/pages/Login/Login';
 import ErrorPage from '@/pages/Error/Error';
 //Pages
-import HidrocarburoPage from '@/pages/Hidrocarburo/Hidrocarburo';
-import PartesPage from '@/pages/Partes/Partes';
-import DireccionPage from '@/pages/Direccion/Direccion';
-import MineriaPage from '@/pages/Mineria/Mineria';
-import EnergiaPage from '@/pages/Energia/Energia';
-import LegalPage from '@/pages/Legal/Legal';
-import AdministracionPage from '@/pages/Administracion/Administracion';
-import HistorialPage from '@/pages/Historial/Historial';
+
 
 import PasswordPage from '@/pages/Password/Password';
 import MaestroPage from '@/pages/Soporte/Maestro/Maestro';
 import UsuarioPage from '@/pages/Soporte/Usuario/Usuario';
 
-import LogPage from '@/pages/Log/Log';
-import ReportePage from '@/pages/Reporte/Reporte';
+
 import AccountPage from '@/pages/Account/Account';
+
 
 // Core
 import TypographyPage from '@/pages/Typography/Typography';
@@ -41,6 +34,7 @@ import ChartsPage from '@/pages/Charts/Charts';
 import IconsPage from '@/pages/Icons/Icons';
 import NotificationsPage from '@/pages/Notifications/Notifications';
 import PersonalPage from '@/pages/Soporte/Personal/Personal';
+import GenerarOrdenPage from '@/pages/CompraMateriales/GenerarOrden';
 
 Vue.use(Router);
 
@@ -61,49 +55,15 @@ export default new Router({
       name: 'Layout',
       component: Layout,
       children: [
+       
         {
-          path: 'partes',
-          name: 'PartesPage',
-          component: PartesPage,
-          children: [
-           
-          ]
+          path: 'generarOrden',
+          name: 'GenerarOrden',
+          component: GenerarOrdenPage,
         },
-        {
-          path: 'direccion',
-          name: 'DireccionPage',
-          component: DireccionPage,
-        },
-        {
-          path: 'hidrocarburo',
-          name: 'HidrocarburoPage',
-          component: HidrocarburoPage,
-        },
-        {
-          path: 'mineria',
-          name: 'MineriaPage',
-          component: MineriaPage,
-        },
-        {
-          path: 'energia',
-          name: 'EnergiaPage',
-          component: EnergiaPage,
-        },
-        {
-          path: 'legal',
-          name: 'LegalPage',
-          component: LegalPage,
-        },
-        {
-          path: 'administracion',
-          name: 'AdministracionPage',
-          component: AdministracionPage,
-        },
-        {
-          path: 'historial',
-          name: 'HistorialPage',
-          component: HistorialPage,
-        },
+        
+        
+        
         {
           path: 'soporte/maestro',
           name: 'MaestroPage',
@@ -119,16 +79,7 @@ export default new Router({
           name: 'PersonalPage',
           component: PersonalPage,
         },
-        {
-          path: 'reporte',
-          name: 'ReportePage',
-          component: ReportePage,
-        },
-        {
-          path: 'log',
-          name: 'LogPage',
-          component: LogPage,
-        },
+        
         {
           path: 'account',
           name: 'AccountPage',

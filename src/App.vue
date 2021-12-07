@@ -11,7 +11,7 @@ export default {
     if (window.localStorage.getItem("authenticated") === "false") {
        this.$router.push("/login");
      }else{
-       this.$router.push("/app/partes");
+       this.$router.push("/app/generarOrden");
      }
 
     // if (currentPath === "/" || currentPath === "/app") {
