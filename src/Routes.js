@@ -36,6 +36,9 @@ import NotificationsPage from '@/pages/Notifications/Notifications';
 import PersonalPage from '@/pages/Soporte/Personal/Personal';
 import GenerarOrdenPage from '@/pages/CompraMateriales/GenerarOrden';
 import Formulario_Solicitud_Material from '@/pages/Formulario1/Formulario_Solicitud_Material';
+import SistemasInventarios from '@/pages/SistemaInventarios/SistemasInventarios';
+import PendientesAutorizar from '@/pages/AutorizacionSolicitudes/PendientesAutorizar';
+import PendientesAutorizarSalidas from '@/pages/PendientesAutorizarSalidas/PendientesAutorizarSalidas';
 
 Vue.use(Router);
 
@@ -68,7 +71,22 @@ export default new Router({
           name: 'SolicitudMaterial',
           component: Formulario_Solicitud_Material,
         },
-        
+
+        {
+          path: 'sistemasInventarios',
+          name: 'SistemasInventarios',
+          component: SistemasInventarios,
+        },
+        {
+          path: 'pendientesAutorizar',
+          name: 'PendientesAutorizar',
+          component: PendientesAutorizar,
+        },
+        {
+          path: 'pendientesAutorizarSalidas',
+          name: 'PendientesAutorizarSalidas',
+          component: PendientesAutorizarSalidas,
+        },
         
         {
           path: 'soporte/maestro',

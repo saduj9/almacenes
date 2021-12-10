@@ -10,11 +10,10 @@
                 <b-row></b-row>
                 <b-row></b-row>
                 <h2 class="page-title">Datos del solicitante</h2>
-                <h5 class="page-title">Escribe tu nombre y correo electrónico:</h5>
                 <b-row>
                     <b-col cols="6" md="6">
-                        <b-form-group id="input-group-dni" label="Nombre y Apellido" label-for="input-dni">
-                            <b-form-input id="input-dni">
+                        <b-form-group id="input-group-dni" label-for="input-dni">
+                            <b-form-input id="input-dni"  disabled>{{id_user}}
                             </b-form-input>
                         </b-form-group>
                     </b-col>
@@ -44,18 +43,7 @@
                 </b-row>
                 <b-row>
                     <b-col cols="6" md="6">
-                        <b-form-group id="input-group-dni" label="Almacen de tránsito:">
-                            <b-form-select >
-                                <b-form-select-option></b-form-select-option>
-                                <b-form-select-option>Traspaso</b-form-select-option>
-                                <b-form-select-option>Deshecho</b-form-select-option>
-                                <b-form-select-option>Merma</b-form-select-option>
-                                <b-form-select-option>Venta</b-form-select-option>
-                            </b-form-select>
-                        </b-form-group>
-                    </b-col>
-                    <b-col cols="6" md="6">
-                        <b-form-group id="input-group-dni" label="Destino Final:">
+                        <b-form-group id="input-group-dni" label="Destino :">
                             <b-form-select >
                                 <b-form-select-option></b-form-select-option>
                                 <b-form-select-option>LPZ-Murillo Periferica</b-form-select-option>
@@ -102,3 +90,53 @@
         </b-row>
     </div>
 </template>
+<script>
+import Vue from 'vue'
+import config from '../../config'
+import Widget from '@/components/Widget/Widget'
+import Sparklines from '../../components/Sparklines/Sparklines'
+
+import DatePicker from 'vue2-datepicker'
+import 'vue2-datepicker/index.css'
+import vue2Dropzone from 'vue2-dropzone'
+import 'vue2-dropzone/dist/vue2Dropzone.min.css'
+import { BootstrapVue, BootstrapVueIcons } from 'bootstrap-vue'
+import VueHtml2pdf from 'vue-html2pdf'
+//import html2pdf from 'html2pdf.js'
+import moment from 'moment'
+moment.locale('es')
+Vue.use(BootstrapVue)
+Vue.use(BootstrapVueIcons)
+
+export default{
+    name:'Formulario_Solicitud_Material',
+    components:{
+        Widget,
+        Sparklines,
+        DatePicker,
+        VueHtml2pdf,
+        vueDropzone: vue2Dropzone,
+    },
+    data(){
+        return{
+         ip: config.ip,
+         user:{},
+         id_user:"hhh",
+        };
+    },
+    methods:{
+       
+        
+    },
+    computed:{
+
+    },
+    created(){   
+        
+        console.log("console",this.id_user)
+        axios.get
+    }
+
+    
+}
+</script>

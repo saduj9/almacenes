@@ -390,7 +390,7 @@
                 </b-form-group> -->
                 <!-- <b-form-group id="input-group-4" label="Carga de documento:" label-for="input-4">
                   <div class="text-right">
-                    <b-button @click="removeAllFiles" variant="danger">Quitar todo</b-button>
+                  <b-button @click="removeAllFiles" variant="danger">Quitar todo</b-button>
                     <input type="file" @change="onFileSelected"> 
                     <vue-dropzone ref="dropzoneCreate" id="dropzoneCreate" :options="dropzoneOptions" @vdropzone-complete="afterComplete"></vue-dropzone>
                   </div>

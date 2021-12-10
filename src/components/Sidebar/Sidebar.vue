@@ -31,6 +31,9 @@
               { header: 'Orden de compra', link: '/app/generarOrden' },
               { header: 'Solicitar Materiales',link:'/app/solicitudMaterial' },
               { header: 'Confirma compra' },
+              { header: 'Sistema de Inventarios',link:'/app/SistemasInventarios'},
+              { header: 'Formularios de Autorización de Solicitudes',link:'/app/PendientesAutorizar'},
+              { header: 'Formularios de Autorización de Salidas',link:'/app/PendientesAutorizarSalidas'}
             ]"
         />
 
